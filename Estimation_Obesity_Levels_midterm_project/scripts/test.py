@@ -1,5 +1,5 @@
 import requests
-url = "http://estimationobesitylevels.us-east-1.elasticbeanstalk.com/predict"
+url = "http://EstimationObesityLevels.us-east-1.elasticbeanstalk.com/predict"
 
 patient = {'gender': 'Female',
            'age': 21.0,

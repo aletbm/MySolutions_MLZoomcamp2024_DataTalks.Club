@@ -144,6 +144,9 @@ and you need to run:
 python scripts/test.py
 ```
 
+Testing
+
+![aws](src\aws.gif)
 
 
 

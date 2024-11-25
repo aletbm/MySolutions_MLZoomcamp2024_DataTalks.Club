@@ -1,5 +1,5 @@
 import requests
-url = "http://eb-estimation-obesity-levels-dev.us-east-1.elasticbeanstalk.com/predict"
+url = "http://estimationobesitylevels.us-east-1.elasticbeanstalk.com/predict"
 
 patient = {'gender': 'Female',
            'age': 21.0,
@@ -23,4 +23,3 @@ print(requests.post(url, json=patient).json())
 
 #pipenv install numpy pandas scikit-learn flask catboost waitress requests cloudpickle
 #pipenv install awsebcli --dev
-#waitress-serve --listen=0.0.0.0:9696 subscription_serving:app

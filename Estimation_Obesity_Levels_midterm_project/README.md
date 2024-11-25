@@ -146,7 +146,7 @@ python scripts/test.py
 
 Testing
 
-![aws](src\aws.gif)
+![aws](./src/aws.gif)
 
 
 

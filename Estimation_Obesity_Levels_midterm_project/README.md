@@ -147,6 +147,3 @@ python scripts/test.py
 Testing
 
 ![aws](./src/aws.gif)
-
-
-

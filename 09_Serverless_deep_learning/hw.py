@@ -52,5 +52,5 @@ def lambda_handler(event, context):
     X = np.array([x])
     X = prepare_input(X)
     preds = predict(X)
-    results = decode_predictions(preds)
-    return {"prediction" : results}
+    #results = decode_predictions(preds)
+    return {"prediction" : preds}

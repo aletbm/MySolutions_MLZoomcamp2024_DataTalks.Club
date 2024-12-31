@@ -218,7 +218,7 @@ def both_task(image, mask, class_):
 
 ENABLE_DOWNLOAD_DATASET = True
 if ENABLE_DOWNLOAD_DATASET == True:
-    #Downloading the dataset
+    #To download the dataset
     download_dataset()
 
 seed_value = 42
@@ -227,8 +227,6 @@ random.seed(seed_value)
 np.random.seed(seed_value)
 
 if __name__ == "__main__":
-    import sys
-    
     imgs_path = []
     classes = []
     
@@ -238,8 +236,7 @@ if __name__ == "__main__":
             classes = dirnames
         for filename in filenames:
             imgs_path.append(os.path.join(dirpath, filename))
-
-
+    
     df_imgs = pd.DataFrame(data=imgs_path, columns=["pathfiles"])
     df_imgs["type_cell"] = df_imgs.map(get_class)
             

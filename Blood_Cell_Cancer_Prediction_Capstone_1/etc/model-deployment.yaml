@@ -19,3 +19,4 @@ spec:
         image: aletbm/tf-serving-blood-cell-model:latest
         ports:
         - containerPort: 8500
+#kubectl apply -f ./etc/model-deployment.yaml

@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: serving-gateway-blood-cell-model
+  labels:
+    app: serving-gateway-blood-cell-model
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: serving-gateway-blood-cell-model
+  template:
+    metadata:
+      labels:
+        app: serving-gateway-blood-cell-model
+    spec:
+      containers:
+      - name: serving-gateway-blood-cell-model
+        image: aletbm/serving-gateway-blood-cell-model:latest
+        ports:
+        - containerPort: 9696
+        env:
+        - name: TF_SERVING_HOST
+          value: "tf-serving-blood-cell-model.default.svc.cluster.local:8500"
+
+#kubectl apply -f ./etc/gateway-deployment.yaml

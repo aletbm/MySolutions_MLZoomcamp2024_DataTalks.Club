@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: serving-gateway-blood-cell-model
+  labels:
+    app: serving-gateway-blood-cell-model
+spec:
+  type: LoadBalancer
+  ports:
+    - port: 80
+      targetPort: 9696
+      protocol: TCP
+      name: http
+  selector:
+    app: serving-gateway-blood-cell-model
+
+#kubectl apply -f ./etc/gateway-deployment-service.yaml

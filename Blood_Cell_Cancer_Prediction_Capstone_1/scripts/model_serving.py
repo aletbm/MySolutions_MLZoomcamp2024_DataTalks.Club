@@ -47,11 +47,11 @@ def process_response(pb_result):
 def apply_model(url):
     image = preprocessing_image(url=url, size=(192, 256))
     pb_request = make_request(image)
-    pb_result = stub.Predict(pb_request, timeout=100.0)
+    pb_result = stub.Predict(pb_request, timeout=400.0)
     return process_response(pb_result)
 
 host = os.getenv('TF_SERVING_HOST', 'localhost:8500')
-channel = grpc.insecure_channel(host)
+channel = grpc.insecure_channel(host, options=(('grpc.enable_http_proxy', 0),))
 stub = prediction_service_pb2_grpc.PredictionServiceStub(channel)
 
 app = Flask('blood-cell-model')

@@ -1,0 +1,17 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: nginx-ingress
+spec:
+  rules:
+  - http:
+      paths:
+      - pathType: Prefix
+        path: "/predict"
+        backend:
+          service:
+            name: serving-gateway-blood-cell-model
+            port:
+              number: 80
+
+#kubectl apply -f nginx-ingress.yaml

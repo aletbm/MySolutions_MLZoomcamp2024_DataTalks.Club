@@ -222,19 +222,18 @@ First, you need to build:
 + The TensorFlow Serving image.
 + The Gateway image.
 
-To do this, I created two Dockerfiles:
+To achieve this, I created two separate Dockerfiles:
 + [serving.dockerfile](https://github.com/aletbm/MySolutions_MLZoomcamp2024_DataTalks.Club/blob/main/Blood_Cell_Cancer_Prediction_Capstone_1/etc/serving.dockerfile) -- Contains the instruction to serve the TensorFlow model in `saved_model` format ([blood-cell-model](https://github.com/aletbm/MySolutions_MLZoomcamp2024_DataTalks.Club/tree/main/Blood_Cell_Cancer_Prediction_Capstone_1/scripts/blood-cell-model)).
 + [gateway.dockerfile](https://github.com/aletbm/MySolutions_MLZoomcamp2024_DataTalks.Club/blob/main/Blood_Cell_Cancer_Prediction_Capstone_1/etc/gateway.dockerfile) -- Contains the instruction to deploy the [model_serving.py](https://github.com/aletbm/MySolutions_MLZoomcamp2024_DataTalks.Club/blob/main/Blood_Cell_Cancer_Prediction_Capstone_1/scripts/model_serving.py) algorithm and install its dependencies.
 
-To build them you can using the following commands:
+To build them, you can use the following commands:
 
 ```
 docker build -t tf-serving-blood-cell-model -f .etc/serving.dockerfile .
 
 docker build -t serving-gateway-blood-cell-model -f ./etc/gateway.dockerfile .
-
 ```
-You must tag and push them in your repository:
+You must tag and push them to your repository:
 ```
 docker tag blood_cell_cancer_prediction <YOUR_USERNAME>/tf-serving-blood-cell-model
 docker tag serving-gateway-blood-cell-model <YOUR_USERNAME>/serving-gateway-blood-cell-model
@@ -242,8 +241,7 @@ docker tag serving-gateway-blood-cell-model <YOUR_USERNAME>/serving-gateway-bloo
 docker push <YOUR_USERNAME>/tf-serving-blood-cell-model:latest
 docker push <YOUR_USERNAME>/serving-gateway-blood-cell-model:latest
 ```
-
-You can also pull them from my repository using the following commands:
+You can also pull them from my repository by using the following commands:
 ```
 docker pull aletbm/tf-serving-blood-cell-model:latest
 
@@ -267,7 +265,6 @@ Don't forget to update the `url` variable in the [test.py](https://github.com/al
 ```
 url = "http://localhost:9696/predict"
 ```
-
 To deploy locally using Kubernetes and Docker, you must replace my Docker username with your Docker username in:
 
 + The [model-deployment.yaml](https://github.com/aletbm/MySolutions_MLZoomcamp2024_DataTalks.Club/blob/main/Blood_Cell_Cancer_Prediction_Capstone_1/etc/model-deployment.yaml) file configuration.

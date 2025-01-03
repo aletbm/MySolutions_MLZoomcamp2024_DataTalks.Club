@@ -162,6 +162,7 @@ The training script is available in the [train.py](https://github.com/aletbm/MyS
 
 Several models were training for different tasks. To deployment I used a model trained for classification and segmentation named [model_seg_clf.keras](https://github.com/aletbm/MySolutions_MLZoomcamp2024_DataTalks.Club/blob/main/Blood_Cell_Cancer_Prediction_Capstone_1/models/model_seg_clf.keras).
 
+---
 # Running the project locally
 
 ## Using Flask
@@ -329,11 +330,14 @@ url = "http://localhost:80/predict"
 
 ## Testing the deployment
 
+I’ve included a GIF that shows how to perform a deployment:
+
 ![kubernetes](./src/kubernetes.gif)
 
 ### Using others sources to test our model:
 
 For the following two examples, I extracted two image from the [Blood Cell Images](https://www.kaggle.com/datasets/paultimothymooney/blood-cells) dataset:
+
 ![Banner_dt](./src/ban_dt_2.png)
 
 #### Example 1

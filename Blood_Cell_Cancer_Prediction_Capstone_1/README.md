@@ -46,7 +46,7 @@ B-cell development<br>
 ---
 # Directory structure
 
-Blood_Cell_Cancer_Prediction_Capstone_1/
+### 📂 Blood_Cell_Cancer_Prediction_Capstone_1
 * 📄 [README.md](https://github.com/aletbm/MySolutions_MLZoomcamp2024_DataTalks.Club/blob/main/Blood_Cell_Cancer_Prediction_Capstone_1/README.md)
 * 📄 [Pipfile](https://github.com/aletbm/MySolutions_MLZoomcamp2024_DataTalks.Club/blob/main/Blood_Cell_Cancer_Prediction_Capstone_1/Pipfile)
 * 📄 [Pipfile.lock](https://github.com/aletbm/MySolutions_MLZoomcamp2024_DataTalks.Club/blob/main/Blood_Cell_Cancer_Prediction_Capstone_1/Pipfile.lock)
@@ -89,7 +89,6 @@ Blood_Cell_Cancer_Prediction_Capstone_1/
         * 📂  [variables](https://github.com/aletbm/MySolutions_MLZoomcamp2024_DataTalks.Club/tree/main/Blood_Cell_Cancer_Prediction_Capstone_1/scripts/blood-cell-model/variables)
             * 📄 [variables.data-00000-of-00001](https://github.com/aletbm/MySolutions_MLZoomcamp2024_DataTalks.Club/blob/main/Blood_Cell_Cancer_Prediction_Capstone_1/scripts/blood-cell-model/variables/variables.data-00000-of-00001)
             * 📄 [variables.index](https://github.com/aletbm/MySolutions_MLZoomcamp2024_DataTalks.Club/blob/main/Blood_Cell_Cancer_Prediction_Capstone_1/scripts/blood-cell-model/variables/variables.index)
-
 
 ---
 # Downloading the dataset

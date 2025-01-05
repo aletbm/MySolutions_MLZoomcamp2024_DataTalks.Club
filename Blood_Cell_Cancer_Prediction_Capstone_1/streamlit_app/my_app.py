@@ -75,7 +75,7 @@ if url:
 
 st.write("#### Second option")
 uploaded_file = st.file_uploader("Choose a file")
-col1, col2 = st.columns(2)
+col1, col2, col3 = st.columns(3)
 if uploaded_file is not None:
     bytes_data = uploaded_file.getvalue()
     image = np.array(Image.open(BytesIO(bytes_data)).convert('RGB'))

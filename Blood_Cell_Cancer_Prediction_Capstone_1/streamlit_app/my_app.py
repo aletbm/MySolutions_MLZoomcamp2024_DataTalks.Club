@@ -37,7 +37,7 @@ st.write("""
 # 🩸 Blood Cell Cancer Prediction - Classification & Segmentation
 """)
 
-model = tf.keras.models.load_model("./models/model_seg_clf.keras")
+model = tf.keras.models.load_model("/mount/src/mysolutions_mlzoomcamp2024_datatalks.club/Blood_Cell_Cancer_Prediction_Capstone_1/models/model_seg_clf.keras")
 
 st.write("You have two options to load your image:")
 st.write("#### First option")

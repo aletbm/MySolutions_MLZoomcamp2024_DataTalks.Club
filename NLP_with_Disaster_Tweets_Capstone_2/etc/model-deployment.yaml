@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tf-serving-disaster-tweets-model
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: tf-serving-disaster-tweets-model
+      version: v01
+  template:
+    metadata:
+      labels:
+        app: tf-serving-disaster-tweets-model
+        version: v01
+    spec:
+      containers:
+      - name: tf-serving-disaster-tweets-model
+        image: aletbm/tf-serving-disaster-tweets-model:latest
+        ports:
+        - containerPort: 8500
+#kubectl apply -f ./etc/model-deployment.yaml

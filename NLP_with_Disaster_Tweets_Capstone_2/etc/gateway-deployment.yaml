@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: serving-gateway-disaster-tweets-model
+  labels:
+    app: serving-gateway-disaster-tweets-model
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: serving-gateway-disaster-tweets-model
+  template:
+    metadata:
+      labels:
+        app: serving-gateway-disaster-tweets-model
+    spec:
+      containers:
+      - name: serving-gateway-disaster-tweets-model
+        image: aletbm/serving-gateway-disaster-tweets-model:latest
+        ports:
+        - containerPort: 9696
+        env:
+        - name: TF_SERVING_HOST
+          value: "tf-serving-disaster-tweets-model.default.svc.cluster.local:8500"
+
+#kubectl apply -f ./etc/gateway-deployment.yaml

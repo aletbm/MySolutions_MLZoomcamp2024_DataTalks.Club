@@ -110,7 +110,7 @@ if __name__ == "__main__":
 
     with open('./models/tokenizer.bin', 'wb') as f_out:
         cloudpickle.dump((tokenizer, dict_words), f_out)
-
+    
     X = df_cl.drop(["target"], axis=1)
     y = df_cl["target"]
 

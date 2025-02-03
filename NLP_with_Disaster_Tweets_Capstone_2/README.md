@@ -327,6 +327,6 @@ I’ve included a GIF that shows how to perform a deployment:
 # Streamlit App
 On the other hand, I developed a very simple app using Streamlit to deploy my model, where you can upload an image and obtain a prediction.
 
-
+https://github.com/user-attachments/assets/ad2c0160-2af8-4ccc-acbe-bfe2ab0056fc
 
 Here’s the link to my [Streamlit App](https://disastertweetsclassification.streamlit.app).

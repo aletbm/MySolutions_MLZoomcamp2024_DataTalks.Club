@@ -36,6 +36,7 @@ You are predicting whether a given tweet is about a real disaster or not. If so,
 You can find the competition in the following link: [https://www.kaggle.com/competitions/nlp-getting-started](https://www.kaggle.com/competitions/nlp-getting-started)
 
 This particular challenge is perfect for data scientists looking to get started with Natural Language Processing.
+
 ---
 # Directory structure
 

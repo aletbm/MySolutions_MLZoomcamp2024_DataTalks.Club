@@ -222,7 +222,6 @@ url = "http://localhost:9696/predict"
 ## Local deployment with Kubernetes, Kind and Docker
 To deploy our model with Kubernetes, I aim to ensure that you can create the following structures and connections:
 ![deployment](./src/network.png)
-[Dockerfile](https://github.com/aletbm/MySolutions_MLZoomcamp2024_DataTalks.Club/blob/main/Estimation_Obesity_Levels_midterm_project/Dockerfile) contain the Docker instructions.
 
 First, you need to build:
 + The TensorFlow Serving image.

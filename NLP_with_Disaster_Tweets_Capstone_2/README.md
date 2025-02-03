@@ -3,9 +3,7 @@
 <img src="https://earthdaily.com/wp-content/uploads/2023/12/EarthDaily-Disaster-Banner-scaled.jpg"></img>
 <cite style="font-size:10px">Source: [EarthDailyAnalytics](https://earthdaily.com/industry/natural-disaster-risk-management/)</cite>
 
-<a href="https://www.kaggle.com/code/aletbm/blood-cell-cancer-prediction?scriptVersionId=215165243" target="_blank"><img align="left" alt="Kaggle" title="Open in Kaggle" src="https://kaggle.com/static/images/open-in-kaggle.svg"></a>
-<a href="https://colab.research.google.com/github/aletbm/MySolutions_MLZoomcamp2024_DataTalks.Club/blob/main/Blood_Cell_Cancer_Prediction_Capstone_1/analysis/blood_cell_cancer_prediction_Colab.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
-<a href="https://bloodcellcancerprediction.streamlit.app" target="_parent"><img src="https://static.streamlit.io/badges/streamlit_badge_black_white.svg" alt="Streamlit App"/></a>
+<a href="https://www.kaggle.com/code/aletbm/nlp-with-disaster-tweets" target="_blank"><img align="left" alt="Kaggle" title="Open in Kaggle" src="https://kaggle.com/static/images/open-in-kaggle.svg"></a><a href="https://colab.research.google.com/drive/1ljQsYggPPQEUjZbLjTANhgEF9vZeCl9L?usp=sharing" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a><a href="https://disastertweetsclassification.streamlit.app" target="_parent"><img src="https://static.streamlit.io/badges/streamlit_badge_black_white.svg" alt="Streamlit App"/></a>
 
 This repository was created as part of [the DataTalks.Club's Machine Learning Zoomcamp](https://github.com/alexeygrigorev) by [Alexey Grigorev](https://github.com/alexeygrigorev).
 
@@ -32,6 +30,11 @@ Tweet source: [https://twitter.com/AnyOtherAnnaK/status/629195955506708480](http
 
 ### What am I predicting?
 You are predicting whether a given tweet is about a real disaster or not. If so, predict a 1. If not, predict a 0.
+
+### Kaggle competition
+    
+You can find the competition in the following link: [https://www.kaggle.com/competitions/nlp-getting-started](https://www.kaggle.com/competitions/nlp-getting-started)
+This particular challenge is perfect for data scientists looking to get started with Natural Language Processing.
 </div>
 </div>
 
@@ -43,19 +46,19 @@ You are predicting whether a given tweet is about a real disaster or not. If so,
 * 📄 [Pipfile](https://github.com/aletbm/MySolutions_MLZoomcamp2024_DataTalks.Club/blob/main/NLP_with_Disaster_Tweets_Capstone_2/Pipfile)
 * 📄 [Pipfile.lock](https://github.com/aletbm/MySolutions_MLZoomcamp2024_DataTalks.Club/blob/main/NLP_with_Disaster_Tweets_Capstone_2/Pipfile.lock)
 * 📂 [analysis](https://github.com/aletbm/MySolutions_MLZoomcamp2024_DataTalks.Club/tree/main/NLP_with_Disaster_Tweets_Capstone_2/analysis)
-    * 📊 [nlp-with-disaster-tweets.ipynb](https://github.com/aletbm/MySolutions_MLZoomcamp2024_DataTalks.Club/blob/main/NLP_with_Disaster_Tweets_Capstone_2/analysis/blood-cell-cancer-prediction.ipynb)
-    * 📊 [nlp-with-disaster-tweets.ipynb](https://github.com/aletbm/MySolutions_MLZoomcamp2024_DataTalks.Club/blob/main/NLP_with_Disaster_Tweets_Capstone_2/analysis/blood-cell-cancer-prediction.ipynb)
-    * 📖 [nlp-with-disaster-tweets.pdf](https://github.com/aletbm/MySolutions_MLZoomcamp2024_DataTalks.Club/blob/main/NLP_with_Disaster_Tweets_Capstone_2/analysis/blood-cell-cancer-prediction.pdf)
+    * 📊 [nlp-with-disaster-tweets.ipynb](https://github.com/aletbm/MySolutions_MLZoomcamp2024_DataTalks.Club/blob/main/NLP_with_Disaster_Tweets_Capstone_2/analysis/nlp-with-disaster-tweets.ipynb)
+    * 📊 [NLP_with_Disaster_Tweets-Colab.ipynb](https://github.com/aletbm/MySolutions_MLZoomcamp2024_DataTalks.Club/blob/main/NLP_with_Disaster_Tweets_Capstone_2/analysis/NLP_with_Disaster_Tweets-Colab.ipynb)
+    * 📖 [NLP_with_Disaster_Tweets-Colab.pdf](https://github.com/aletbm/MySolutions_MLZoomcamp2024_DataTalks.Club/blob/main/NLP_with_Disaster_Tweets_Capstone_2/analysis/NLP_with_Disaster_Tweets-Colab.pdf)
     * 📊 [test_deploy.ipynb](https://github.com/aletbm/MySolutions_MLZoomcamp2024_DataTalks.Club/blob/main/NLP_with_Disaster_Tweets_Capstone_2/analysis/test_deploy.ipynb)
 * 📂 [dataset](https://github.com/aletbm/MySolutions_MLZoomcamp2024_DataTalks.Club/tree/main/NLP_with_Disaster_Tweets_Capstone_2/dataset)
-    * 📂 [479k-english-words](https://github.com/aletbm/MySolutions_MLZoomcamp2024_DataTalks.Club/tree/main/NLP_with_Disaster_Tweets_Capstone_2/dataset)
-        * 🗄️ [english_words_479k.txt](https://github.com/aletbm/MySolutions_MLZoomcamp2024_DataTalks.Club/blob/main/NLP_with_Disaster_Tweets_Capstone_2/dataset/blood_cell_cancer_with_mask_test.tfrecord)
-    * 📂 [english-word-frequency](https://github.com/aletbm/MySolutions_MLZoomcamp2024_DataTalks.Club/tree/main/NLP_with_Disaster_Tweets_Capstone_2/dataset)
-        * 🗄️ [unigram_freq.csv](https://github.com/aletbm/MySolutions_MLZoomcamp2024_DataTalks.Club/blob/main/NLP_with_Disaster_Tweets_Capstone_2/dataset/blood_cell_cancer_with_mask_train.tfrecord)
-    * 📂 [nlp-getting-started](https://github.com/aletbm/MySolutions_MLZoomcamp2024_DataTalks.Club/tree/main/NLP_with_Disaster_Tweets_Capstone_2/dataset)
-        * 🗄️ [sample_submission.csv](https://github.com/aletbm/MySolutions_MLZoomcamp2024_DataTalks.Club/blob/main/NLP_with_Disaster_Tweets_Capstone_2/dataset/blood_cell_cancer_with_mask_val.tfrecord)
-        * 🗄️ [test.csv](https://github.com/aletbm/MySolutions_MLZoomcamp2024_DataTalks.Club/blob/main/NLP_with_Disaster_Tweets_Capstone_2/dataset/blood_cell_cancer_with_mask_val.tfrecord)
-        * 🗄️ [train.csv](https://github.com/aletbm/MySolutions_MLZoomcamp2024_DataTalks.Club/blob/main/NLP_with_Disaster_Tweets_Capstone_2/dataset/blood_cell_cancer_with_mask_val.tfrecord)
+    * 📂 [479k-english-words](https://github.com/aletbm/MySolutions_MLZoomcamp2024_DataTalks.Club/tree/main/NLP_with_Disaster_Tweets_Capstone_2/dataset/479k-english-words)
+        * 🗄️ [english_words_479k.txt](https://github.com/aletbm/MySolutions_MLZoomcamp2024_DataTalks.Club/blob/main/NLP_with_Disaster_Tweets_Capstone_2/dataset/479k-english-words/english_words_479k.txt)
+    * 📂 [english-word-frequency](https://github.com/aletbm/MySolutions_MLZoomcamp2024_DataTalks.Club/tree/main/NLP_with_Disaster_Tweets_Capstone_2/dataset/english-word-frequency)
+        * 🗄️ [unigram_freq.csv](https://github.com/aletbm/MySolutions_MLZoomcamp2024_DataTalks.Club/blob/main/NLP_with_Disaster_Tweets_Capstone_2/dataset/english-word-frequency/unigram_freq.csv)
+    * 📂 [nlp-getting-started](https://github.com/aletbm/MySolutions_MLZoomcamp2024_DataTalks.Club/tree/main/NLP_with_Disaster_Tweets_Capstone_2/dataset/nlp-getting-started)
+        * 🗄️ [sample_submission.csv](https://github.com/aletbm/MySolutions_MLZoomcamp2024_DataTalks.Club/blob/main/NLP_with_Disaster_Tweets_Capstone_2/dataset/nlp-getting-started/sample_submission.csv)
+        * 🗄️ [test.csv](https://github.com/aletbm/MySolutions_MLZoomcamp2024_DataTalks.Club/blob/main/NLP_with_Disaster_Tweets_Capstone_2/dataset/nlp-getting-started/test.csv)
+        * 🗄️ [train.csv](https://github.com/aletbm/MySolutions_MLZoomcamp2024_DataTalks.Club/blob/main/NLP_with_Disaster_Tweets_Capstone_2/dataset/nlp-getting-started/train.csv)
 * 📂 [etc](https://github.com/aletbm/MySolutions_MLZoomcamp2024_DataTalks.Club/tree/main/NLP_with_Disaster_Tweets_Capstone_2/etc)
     * 📄 [deploy.sh](https://github.com/aletbm/MySolutions_MLZoomcamp2024_DataTalks.Club/blob/main/NLP_with_Disaster_Tweets_Capstone_2/etc/deploy.sh)
     * ⚙️ [gateway-deployment-service.yaml](https://github.com/aletbm/MySolutions_MLZoomcamp2024_DataTalks.Club/blob/main/NLP_with_Disaster_Tweets_Capstone_2/etc/gateway-deployment-service.yaml)
@@ -68,25 +71,25 @@ You are predicting whether a given tweet is about a real disaster or not. If so,
     * ⚙️ [nginx-ingress.yaml](https://github.com/aletbm/MySolutions_MLZoomcamp2024_DataTalks.Club/blob/main/NLP_with_Disaster_Tweets_Capstone_2/etc/nginx-ingress.yaml)
     * 🐋 [serving.dockerfile](https://github.com/aletbm/MySolutions_MLZoomcamp2024_DataTalks.Club/blob/main/NLP_with_Disaster_Tweets_Capstone_2/etc/serving.dockerfile)
 * 📂 [models](https://github.com/aletbm/MySolutions_MLZoomcamp2024_DataTalks.Club/tree/main/NLP_with_Disaster_Tweets_Capstone_2/models)
-    * 🤖 [model_base.h5](https://github.com/aletbm/MySolutions_MLZoomcamp2024_DataTalks.Club/blob/main/NLP_with_Disaster_Tweets_Capstone_2/models/model_backbone.keras)
-    * 🤖 [tokenizer.bin](https://github.com/aletbm/MySolutions_MLZoomcamp2024_DataTalks.Club/blob/main/NLP_with_Disaster_Tweets_Capstone_2/models/model_base.keras)
+    * 🤖 [model_base.h5](https://github.com/aletbm/MySolutions_MLZoomcamp2024_DataTalks.Club/blob/main/NLP_with_Disaster_Tweets_Capstone_2/models/model_base.h5)
+    * 🤖 [tokenizer.bin](https://github.com/aletbm/MySolutions_MLZoomcamp2024_DataTalks.Club/blob/main/NLP_with_Disaster_Tweets_Capstone_2/models/tokenizer.bin)
 * 📂 [scripts](https://github.com/aletbm/MySolutions_MLZoomcamp2024_DataTalks.Club/tree/main/NLP_with_Disaster_Tweets_Capstone_2/scripts)
-    * 🐍 [load_data.py](https://github.com/aletbm/MySolutions_MLZoomcamp2024_DataTalks.Club/blob/main/NLP_with_Disaster_Tweets_Capstone_2/scripts/model_conversor.py)
+    * 🐍 [load_data.py](https://github.com/aletbm/MySolutions_MLZoomcamp2024_DataTalks.Club/blob/main/NLP_with_Disaster_Tweets_Capstone_2/scripts/load_data.py)
     * 🐍 [model_conversor.py](https://github.com/aletbm/MySolutions_MLZoomcamp2024_DataTalks.Club/blob/main/NLP_with_Disaster_Tweets_Capstone_2/scripts/model_conversor.py)
     * 🐍 [model_serving.py](https://github.com/aletbm/MySolutions_MLZoomcamp2024_DataTalks.Club/blob/main/NLP_with_Disaster_Tweets_Capstone_2/scripts/model_serving.py)
     * 🐍 [test.py](https://github.com/aletbm/MySolutions_MLZoomcamp2024_DataTalks.Club/blob/main/NLP_with_Disaster_Tweets_Capstone_2/scripts/test.py)
     * 🐍 [train.py](https://github.com/aletbm/MySolutions_MLZoomcamp2024_DataTalks.Club/blob/main/NLP_with_Disaster_Tweets_Capstone_2/scripts/train.py)
-    * 🐍 [utils.py](https://github.com/aletbm/MySolutions_MLZoomcamp2024_DataTalks.Club/blob/main/NLP_with_Disaster_Tweets_Capstone_2/scripts/train.py)
-    * 📂 [disaster_tweets_model](https://github.com/aletbm/MySolutions_MLZoomcamp2024_DataTalks.Club/tree/main/NLP_with_Disaster_Tweets_Capstone_2/scripts/blood-cell-model)
-        * 📄 [fingerprint.pb](https://github.com/aletbm/MySolutions_MLZoomcamp2024_DataTalks.Club/blob/main/NLP_with_Disaster_Tweets_Capstone_2/scripts/blood-cell-model/fingerprint.pb)
-        * 📄 [saved_model.pb](https://github.com/aletbm/MySolutions_MLZoomcamp2024_DataTalks.Club/blob/main/NLP_with_Disaster_Tweets_Capstone_2/scripts/blood-cell-model/saved_model.pb)
-        * 📂  [variables](https://github.com/aletbm/MySolutions_MLZoomcamp2024_DataTalks.Club/tree/main/NLP_with_Disaster_Tweets_Capstone_2/scripts/blood-cell-model/variables)
-            * 📄 [variables.data-00000-of-00001](https://github.com/aletbm/MySolutions_MLZoomcamp2024_DataTalks.Club/blob/main/NLP_with_Disaster_Tweets_Capstone_2/scripts/blood-cell-model/variables/variables.data-00000-of-00001)
-            * 📄 [variables.index](https://github.com/aletbm/MySolutions_MLZoomcamp2024_DataTalks.Club/blob/main/NLP_with_Disaster_Tweets_Capstone_2/scripts/blood-cell-model/variables/variables.index)
+    * 🐍 [utils.py](https://github.com/aletbm/MySolutions_MLZoomcamp2024_DataTalks.Club/blob/main/NLP_with_Disaster_Tweets_Capstone_2/scripts/utils.py)
+    * 📂 [disaster_tweets_model](https://github.com/aletbm/MySolutions_MLZoomcamp2024_DataTalks.Club/tree/main/NLP_with_Disaster_Tweets_Capstone_2/scripts/disaster_tweets_model)
+        * 📄 [fingerprint.pb](https://github.com/aletbm/MySolutions_MLZoomcamp2024_DataTalks.Club/blob/main/NLP_with_Disaster_Tweets_Capstone_2/scripts/disaster_tweets_model/fingerprint.pb)
+        * 📄 [saved_model.pb](https://github.com/aletbm/MySolutions_MLZoomcamp2024_DataTalks.Club/blob/main/NLP_with_Disaster_Tweets_Capstone_2/scripts/disaster_tweets_model/saved_model.pb)
+        * 📂  [variables](https://github.com/aletbm/MySolutions_MLZoomcamp2024_DataTalks.Club/tree/main/NLP_with_Disaster_Tweets_Capstone_2/scripts/disaster_tweets_model/variables)
+            * 📄 [variables.data-00000-of-00001](https://github.com/aletbm/MySolutions_MLZoomcamp2024_DataTalks.Club/blob/main/NLP_with_Disaster_Tweets_Capstone_2/scripts/disaster_tweets_model/variables/variables.data-00000-of-00001)
+            * 📄 [variables.index](https://github.com/aletbm/MySolutions_MLZoomcamp2024_DataTalks.Club/blob/main/NLP_with_Disaster_Tweets_Capstone_2/scripts/disaster_tweets_model/variables/variables.index)
 * 📂  [streamlit_app](https://github.com/aletbm/MySolutions_MLZoomcamp2024_DataTalks.Club/tree/main/NLP_with_Disaster_Tweets_Capstone_2/streamlit_app)
     * 🐍 [my_app.py](https://github.com/aletbm/MySolutions_MLZoomcamp2024_DataTalks.Club/tree/main/NLP_with_Disaster_Tweets_Capstone_2/streamlit_app/my_app.py)
     * 📄 [requirements.txt](https://github.com/aletbm/MySolutions_MLZoomcamp2024_DataTalks.Club/tree/main/NLP_with_Disaster_Tweets_Capstone_2/streamlit_app/requirements.txt)
-    * 🗄️ [train_clean.csv](https://github.com/aletbm/MySolutions_MLZoomcamp2024_DataTalks.Club/blob/main/NLP_with_Disaster_Tweets_Capstone_2/dataset/blood_cell_cancer_with_mask_train.tfrecord)
+    * 🗄️ [train_clean.csv](https://github.com/aletbm/MySolutions_MLZoomcamp2024_DataTalks.Club/blob/main/NLP_with_Disaster_Tweets_Capstone_2/streamlit_app/train_clean.csv)
 
 ---
 # Downloading the dataset
@@ -113,6 +116,8 @@ print('Data source import complete.')
 You need to log in with your credentials or username and password. For more help, refer to the [KaggleHub repository](https://github.com/Kaggle/kagglehub)
 
 ## Dataset Description
+The dataset for training contains 7613 records about tweets.
+
 Each sample in the train and test set has the following information:
 
 + The `text` of a tweet
@@ -126,8 +131,9 @@ F1 is calculated as follows:
 $ F_1=2∗\frac{precision∗recall}{precision+recall}$
 
 where:
-$precision=\frac{TP}{TP+FP}$
-$recall=\frac{TP}{TP+FN}$
++ $precision=\frac{TP}{TP+FP}$
++ $recall=\frac{TP}{TP+FN}$
+
 and:
 ```
 True Positive [TP] = your prediction is 1, and the ground truth is also 1 - you predicted a positive and that's true!
@@ -172,7 +178,7 @@ Then, you will be ready to test the model by running the following command:
 ```
 python ./scripts/test.py
 ```
-Don't forget to update the `url` variable in the [test.py](https://github.com/aletbm/MySolutions_MLZoomcamp2024_DataTalks.Club/blob/main/Blood_Cell_Cancer_Prediction_Capstone_1/scripts/test.py) file to:
+Don't forget to update the `url` variable in the [test.py](https://github.com/aletbm/MySolutions_MLZoomcamp2024_DataTalks.Club/blob/main/NLP_with_Disaster_Tweets_Capstone_2/scripts/test.py) file to:
 ```
 url = "http://localhost:9696/predict"
 ```
@@ -194,7 +200,7 @@ And then, you can test the model by running the following command:
 ```
 python ./scripts/test.py
 ```
-Don't forget to update the `url` variable in the [test.py](https://github.com/aletbm/MySolutions_MLZoomcamp2024_DataTalks.Club/blob/main/Estimation_Obesity_Levels_midterm_project/scripts/test.py) file to:
+Don't forget to update the `url` variable in the [test.py](https://github.com/aletbm/MySolutions_MLZoomcamp2024_DataTalks.Club/blob/main/NLP_with_Disaster_Tweets_Capstone_2/scripts/test.py) file to:
 ```
 url = "http://localhost:9696/predict"
 ```
@@ -211,65 +217,65 @@ First, you need to build:
 + The Gateway image.
 
 To achieve this, I created two separate Dockerfiles:
-+ [serving.dockerfile](https://github.com/aletbm/MySolutions_MLZoomcamp2024_DataTalks.Club/blob/main/Blood_Cell_Cancer_Prediction_Capstone_1/etc/serving.dockerfile) -- Contains the instruction to serve the TensorFlow model in `saved_model` format ([blood-cell-model](https://github.com/aletbm/MySolutions_MLZoomcamp2024_DataTalks.Club/tree/main/Blood_Cell_Cancer_Prediction_Capstone_1/scripts/blood-cell-model)).
-+ [gateway.dockerfile](https://github.com/aletbm/MySolutions_MLZoomcamp2024_DataTalks.Club/blob/main/Blood_Cell_Cancer_Prediction_Capstone_1/etc/gateway.dockerfile) -- Contains the instruction to deploy the [model_serving.py](https://github.com/aletbm/MySolutions_MLZoomcamp2024_DataTalks.Club/blob/main/Blood_Cell_Cancer_Prediction_Capstone_1/scripts/model_serving.py) algorithm and install its dependencies.
++ [serving.dockerfile](https://github.com/aletbm/MySolutions_MLZoomcamp2024_DataTalks.Club/blob/main/NLP_with_Disaster_Tweets_Capstone_2/etc/serving.dockerfile) -- Contains the instruction to serve the TensorFlow model in `saved_model` format ([disaster_tweets_model](https://github.com/aletbm/MySolutions_MLZoomcamp2024_DataTalks.Club/tree/main/NLP_with_Disaster_Tweets_Capstone_2/scripts/disaster_tweets_model)).
++ [gateway.dockerfile](https://github.com/aletbm/MySolutions_MLZoomcamp2024_DataTalks.Club/blob/main/NLP_with_Disaster_Tweets_Capstone_2/etc/gateway.dockerfile) -- Contains the instruction to deploy the [model_serving.py](https://github.com/aletbm/MySolutions_MLZoomcamp2024_DataTalks.Club/blob/main/NLP_with_Disaster_Tweets_Capstone_2/scripts/model_serving.py) algorithm and install its dependencies.
 
 To build them, you can use the following commands:
 
 ```
-docker build -t tf-serving-blood-cell-model -f .etc/serving.dockerfile .
+docker build -t tf-serving-disaster-tweets-model -f .etc/serving.dockerfile .
 
-docker build -t serving-gateway-blood-cell-model -f ./etc/gateway.dockerfile .
+docker build -t serving-gateway-disaster-tweets-model -f ./etc/gateway.dockerfile .
 ```
 You must tag and push them to your repository:
 ```
-docker tag blood_cell_cancer_prediction <YOUR_USERNAME>/tf-serving-blood-cell-model
-docker tag serving-gateway-blood-cell-model <YOUR_USERNAME>/serving-gateway-blood-cell-model
+docker tag tf-serving-disaster-tweets-model <YOUR_USERNAME>/tf-serving-disaster-tweets-model
+docker tag serving-gateway-disaster-tweets-model <YOUR_USERNAME>/serving-gateway-disaster-tweets-model
 
-docker push <YOUR_USERNAME>/tf-serving-blood-cell-model:latest
-docker push <YOUR_USERNAME>/serving-gateway-blood-cell-model:latest
+docker push <YOUR_USERNAME>/tf-serving-disaster-tweets-model:latest
+docker push <YOUR_USERNAME>/serving-gateway-disaster-tweets-model:latest
 ```
 You can also pull them from my repository by using the following commands:
 ```
-docker pull aletbm/tf-serving-blood-cell-model:latest
+docker pull aletbm/tf-serving-disaster-tweets-model:latest
 
-docker pull aletbm/serving-gateway-blood-cell-model:latest
+docker pull aletbm/serving-gateway-disaster-tweets-model:latest
 ```
 To deploy locally using Docker, you must execute the following commands in two separate terminals:
 
 + To serve the model:
     ```
-    docker run -it --rm -p 8500:8500 tf-serving-blood-cell-model:latest
+    docker run -it --rm -p 8500:8500 tf-serving-disaster-tweets-model:latest
     ```
 + To deploy the gateway:
     ```
-    docker run -it --rm -p 9696:9696 serving-gateway-blood-cell-model:latest
+    docker run -it --rm -p 9696:9696 serving-gateway-disaster-tweets-model:latest
     ```
 Then, you will be ready to test the model by running the following command:
 ```
 python ./scripts/test.py
 ```
-Don't forget to update the `url` variable in the [test.py](https://github.com/aletbm/MySolutions_MLZoomcamp2024_DataTalks.Club/blob/main/Blood_Cell_Cancer_Prediction_Capstone_1/scripts/test.py) file to:
+Don't forget to update the `url` variable in the [test.py](https://github.com/aletbm/MySolutions_MLZoomcamp2024_DataTalks.Club/blob/main/NLP_with_Disaster_Tweets_Capstone_2/scripts/test.py) file to:
 ```
 url = "http://localhost:9696/predict"
 ```
 To deploy locally using Kubernetes and Docker, you must replace my Docker username with your Docker username in:
 
-+ The [model-deployment.yaml](https://github.com/aletbm/MySolutions_MLZoomcamp2024_DataTalks.Club/blob/main/Blood_Cell_Cancer_Prediction_Capstone_1/etc/model-deployment.yaml) file configuration.
++ The [model-deployment.yaml](https://github.com/aletbm/MySolutions_MLZoomcamp2024_DataTalks.Club/blob/main/NLP_with_Disaster_Tweets_Capstone_2/etc/model-deployment.yaml) file configuration.
     ```
         spec:
         containers:
-        - name: tf-serving-blood-cell-model
-            image: <YOUR_USERNAME>/tf-serving-blood-cell-model:latest
+        - name: tf-serving-disaster-tweets-model
+            image: <YOUR_USERNAME>/tf-serving-disaster-tweets-model:latest
             ports:
             - containerPort: 8500
     ```
-+ The [gateway-deployment.yaml](https://github.com/aletbm/MySolutions_MLZoomcamp2024_DataTalks.Club/blob/main/Blood_Cell_Cancer_Prediction_Capstone_1/etc/gateway-deployment.yaml) file configuration.
++ The [gateway-deployment.yaml](https://github.com/aletbm/MySolutions_MLZoomcamp2024_DataTalks.Club/blob/main/NLP_with_Disaster_Tweets_Capstone_2/etc/gateway-deployment.yaml) file configuration.
     ```
     spec:
       containers:
-      - name: serving-gateway-blood-cell-model
-        image: <YOUR_USERNAME>/serving-gateway-blood-cell-model:latest
+      - name: serving-gateway-disaster-tweets-model
+        image: <YOUR_USERNAME>/serving-gateway-disaster-tweets-model:latest
         ports:
         - containerPort: 9696
     ```
@@ -279,7 +285,7 @@ Up to this point, you have built and pushed all the necessary images, and all co
 
 Now, you need to create a Kubernetes cluster with Kind and apply all configuration files. To do this, you have two options:
 + Do it manually by executing each command individually.
-+ Do it automatically by executing the [deploy.sh](https://github.com/aletbm/MySolutions_MLZoomcamp2024_DataTalks.Club/blob/main/Blood_Cell_Cancer_Prediction_Capstone_1/etc/deploy.sh) script.
++ Do it automatically by executing the [deploy.sh](https://github.com/aletbm/MySolutions_MLZoomcamp2024_DataTalks.Club/blob/main/NLP_with_Disaster_Tweets_Capstone_2/etc/deploy.sh) script.
 
 Manually, you must to execute the following commands:
 ```
@@ -310,7 +316,7 @@ Once all pods are running, you can test the deployment by running the following 
 ```
 python ./scripts/test.py
 ```
-Don't forget to update the `url` variable in the [test.py](https://github.com/aletbm/MySolutions_MLZoomcamp2024_DataTalks.Club/blob/main/Blood_Cell_Cancer_Prediction_Capstone_1/scripts/test.py) file to:
+Don't forget to update the `url` variable in the [test.py](https://github.com/aletbm/MySolutions_MLZoomcamp2024_DataTalks.Club/blob/main/NLP_with_Disaster_Tweets_Capstone_2/scripts/test.py) file to:
 ```
 url = "http://localhost:80/predict"
 ```
@@ -321,33 +327,9 @@ I’ve included a GIF that shows how to perform a deployment:
 
 ![kubernetes](./src/kubernetes.gif)
 
-### Using others sources to test our model:
-
-For the following two examples, I extracted two image from the [Blood Cell Images](https://www.kaggle.com/datasets/paultimothymooney/blood-cells) dataset:
-
-![Banner_dt](./src/ban_dt_2.png)
-
-#### Example 1
-![Example_1](./src/example1.png)
-
-#### Example 2
-![Example_1](./src/example1.png)
-
-Futhermore, I extracted some frames from the video of [@elioffm](https://www.tiktok.com/@elioffm) on TikTok:
-
-https://github.com/user-attachments/assets/e12130ff-a58c-4a8a-b0d8-facf77e13553
-
-Link to the original video: [Video on TikTok](https://www.tiktok.com/@elioffm/video/7393335594484518149)
-
-#### Frame 1
-![Example_1](./src/exampleFromVideo1.png)
-
-#### Frame 1
-![Example_1](./src/exampleFromVideo2.png)
-
 # Streamlit App
 On the other hand, I developed a very simple app using Streamlit to deploy my model, where you can upload an image and obtain a prediction.
 
-![Streamlit App](./src/streamlit.gif)
 
-Here’s the link to my [Streamlit App](https://bloodcellcancerprediction.streamlit.app).
+
+Here’s the link to my [Streamlit App](https://disastertweetsclassification.streamlit.app).

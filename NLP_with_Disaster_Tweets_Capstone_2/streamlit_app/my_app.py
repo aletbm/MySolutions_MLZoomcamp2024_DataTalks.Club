@@ -2,75 +2,25 @@ import os
 import sys
 sys.path.append(os.path.dirname("/mount/src/mysolutions_mlzoomcamp2024_datatalks.club/NLP_with_Disaster_Tweets_Capstone_2/scripts/utils.py"))
 
+import os
 import streamlit as st
 import tensorflow as tf
 from tensorflow.keras.preprocessing.text import Tokenizer
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 import numpy as np
-import matplotlib.pyplot as plt
 import pandas as pd
-import seaborn as sns
-import mplcyberpunk
-from wordcloud import WordCloud, STOPWORDS
-from sklearn.feature_extraction.text import CountVectorizer
 from utils import init_configure, preprocessing_text, preprocessing_keyword, get_tokens
 import cloudpickle
 import spacy
-plt.style.use("cyberpunk")
 
-aux = STOPWORDS.copy()
-aux.update(["t"])
-aux.update(["co"])
-aux.update(["https"])
-aux.update(["w"])
-aux.update(["Û_"])
-aux.update(["Û"])
-aux.update(["U"])
-aux.update(["ûᵃ"])
-aux.update(["ûò"])
+path = "/mount/src/MySolutions_MLZoomcamp2024_DataTalks.Club/NLP_with_Disaster_Tweets_Capstone_2"
+#path="."
 
 nlp = spacy.load("en_core_web_lg")
 matcher, _, max_length_tweet, max_length_keyword = init_configure(nlp)
 
-with open('/mount/src/mysolutions_mlzoomcamp2024_datatalks.club/NLP_with_Disaster_Tweets_Capstone_2/models/tokenizer.bin', 'rb') as f_in:
+with open(path+'/models/tokenizer.bin', 'rb') as f_in:
     tokenizer, dict_words = cloudpickle.load(f_in)
-    
-def word_cloud(text, stopwords):
-    word_cloud = WordCloud(width=1280, height=360, stopwords=stopwords, max_words=300).generate(text=alltext.lower())
-
-    fig, ax = plt.subplots(1, 1, figsize=(10, 20), dpi=2000)
-    ax.imshow(word_cloud)
-    ax.axis("off")
-    plt.tight_layout()
-    return fig
-
-def get_top_n_words(data, ngram_range=(1, 1)):
-    vectorizer = CountVectorizer(ngram_range=ngram_range)
-    count_matrix = vectorizer.fit_transform(data)
-    count_array = count_matrix.toarray()
-    bag_of_words = pd.DataFrame(data=count_array, columns = vectorizer.get_feature_names_out(), index=data.index)
-    return bag_of_words
-
-def plot_top_words(data, bag_of_words, top=20):
-    top_word_disaster = bag_of_words[data['target'] == 1].sum().sort_values(ascending=False)
-    top_word_disaster = top_word_disaster[:top]
-    
-    top_word_notdisaster = bag_of_words[data["target"] == 0].sum().sort_values(ascending=False)
-    top_word_notdisaster = top_word_notdisaster[:top]
-    fig, ax = plt.subplots(1, 2, figsize=(18, 10), dpi=200)
-    
-    sns.barplot(y=top_word_notdisaster.index, x=top_word_notdisaster, color='#08F7FE', ax=ax[0])
-    ax[0].set_title("Non-Disaster Tweets")
-    ax[0].set_ylabel("")
-    
-    sns.barplot(y=top_word_disaster.index, x=top_word_disaster, color='#FE53BB', ax=ax[1])
-    ax[1].set_title("Disaster Tweets")
-    ax[1].set_ylabel("")
-    
-    plt.suptitle(f"Top {top} words in tweets after preprocessing")
-    
-    plt.tight_layout()
-    return fig
 
 def transform_text(tweet):
     tweet = tweet.fillna(" ")
@@ -99,7 +49,8 @@ def process_prediction(prediction):
 
 st.set_page_config(layout="wide")
 
-st.write("# 🌋 Natural Language Processing with Disaster Tweets - [DataTalks.Club](https://datatalks.club)'s Capstone 2 project by [Alexander D. Rios](https://linktr.ee/aletbm)")
+st.write("#### [DataTalks.Club](https://datatalks.club)'s Capstone 2 project by [Alexander D. Rios](https://linktr.ee/aletbm)")
+st.write("# 🌋 Natural Language Processing with Disaster Tweets")
 st.image("https://earthdaily.com/wp-content/uploads/2023/12/EarthDaily-Disaster-Banner-scaled.jpg", caption="Source: EarthDailyAnalytics")
 
 tab1, tab2, tab3 = st.tabs(["Competition description", "Dataset analysis", "Get a prediction"])
@@ -142,8 +93,8 @@ with tab1:
     """)
 
 with tab2:
-    df = pd.read_csv("/mount/src/mysolutions_mlzoomcamp2024_datatalks.club/NLP_with_Disaster_Tweets_Capstone_2/dataset/nlp-getting-started/train.csv", index_col="id")
-    df_clean = pd.read_csv("/mount/src/mysolutions_mlzoomcamp2024_datatalks.club/NLP_with_Disaster_Tweets_Capstone_2/streamlit_app/train_clean.csv", index_col="id")
+    df = pd.read_csv(path+"/dataset/nlp-getting-started/train.csv", index_col="id")
+    df_clean = pd.read_csv(path+"/streamlit_app/train_clean.csv", index_col="id")
 
     st.write(f"""## Dataset Description
 The dataset for training contains {len(df)} records about tweets.
@@ -164,23 +115,16 @@ Each sample in the train and test set has the following information:
 
     st.write("### Checking the balance of the target")
     st.write(f"After cleaning the null values and removing duplicate records, the total records is {len(df)}, and we can see the target balance.")
-    fig, ax = plt.subplots(1, 1, figsize=(15, 2))
-    sns.barplot(y=labels, x=values, hue=labels, ax=ax)
-    plt.tight_layout()
-    st.pyplot(fig)
+    st.image("https://i.postimg.cc/rF8HFHr8/5f12609a226e8f50f8c895623dbd7f8083a2e545a2556aab03a752a3.png")
     st.write(f"This dataset is a imbalace dataset that contains {values[1]} disaster tweets and {values[0]} non-disaster tweets.")
     
     st.write("### Word clouds")
     st.write("#### Most frequent words in Disasters Tweets")
-    alltext = ' '.join(df.loc[df['target'] == 1, "text"])
-    fig = word_cloud(text=alltext, stopwords=aux)
-    st.pyplot(fig)
+    st.image("https://i.postimg.cc/G2FMbP38/f2284cbda1a4b7759ed2e2f40be651a1bd0730d4f32f4c5420966f19.png")
     st.write("We can see that the most common words in disaster tweets are related to natural disasters, accidents, and fatalities, such as fire, storm, Hiroshima, and suicide bomber.")
     
     st.write("#### Most frequent words in Non-Disasters Tweets")
-    alltext = ' '.join(df.loc[df['target'] == 0, "text"])
-    fig = word_cloud(text=alltext, stopwords=aux)
-    st.pyplot(fig)
+    st.image("https://i.postimg.cc/VNbGVQ3F/62bcc0c9b2c6676791eadf1accd2ba2d6c65a61656c1f54f9abb443c.png")
     st.write("We can see that the most common words in non-disaster tweets are related to cotidian words.")
     
     st.write("""### Working on the text of the tweets
@@ -212,31 +156,20 @@ The processing pipeline consists of one or more pipeline components that are cal
     st.write("### N-Grams")
     st.write("After cleaning the tweet texts, we can analyze the n-grams in the sentences.")
     st.write("#### Unigrams")
-    bag_of_words = get_top_n_words(data=df_clean.loc[~df_clean['clean_text'].isna(), "clean_text"], ngram_range=(1, 1))
-    fig = plot_top_words(data=df_clean[~df_clean['clean_text'].isna()], bag_of_words=bag_of_words, top=20)
-    st.pyplot(fig)
+    st.image("https://i.postimg.cc/5NnRHmB8/9a33e1ba17e45e6bc93f7795559a00f142575e67269aa2983417a037.png")
     st.write("We can see the difference between the unigrams of disaster tweets and non-disaster tweets. The disaster tweets contain unigrams with negative connotations.")
     
     st.write("#### Bigrams")
-    bag_of_words = get_top_n_words(data=df_clean.loc[~df_clean['clean_text'].isna(), "clean_text"], ngram_range=(2, 2))
-    fig = plot_top_words(data=df_clean[~df_clean['clean_text'].isna()], bag_of_words=bag_of_words, top=20)
-    st.pyplot(fig)
+    st.image("https://i.postimg.cc/MpHr1j5N/99fd1a5435d28f94a709be7130018e6feaebbabb971d7ff58fdff70e.png")
     st.write("We can see the difference between the bigrams of disaster tweets and non-disaster tweets. The disaster tweets contain bigrams with negative connotations.")
     
     st.write("#### Trigrams")
-    bag_of_words = get_top_n_words(data=df_clean.loc[~df_clean['clean_text'].isna(), "clean_text"], ngram_range=(3, 3))
-    fig = plot_top_words(data=df_clean[~df_clean['clean_text'].isna()], bag_of_words=bag_of_words, top=20)
-    st.pyplot(fig)
+    st.image("https://i.postimg.cc/QdzYmxnt/9b962c0b53e9aa487d1647b3683e41670cb31803fc03db2088ed7eee.png")
     st.write("We can see the difference between the trigrams of disaster tweets and non-disaster tweets. The disaster tweets contain trigrams with negative connotations.")
     
     st.write("### Distribution of the context feature by tweet type")
     
-    target = df_clean["target"].map({0: "Not Disaster Tweets", 1: "Disaster Tweets"})
-    fig, ax = plt.subplots(3, 2, figsize=(20, 15), dpi=300)
-    for i, col in enumerate(["n_words", "n_characters", "n_hashtags", "n_mentions", "n_urls", "n_punctuations"]):
-        plt.subplot(3, 2, i+1)
-        sns.histplot(x=df_clean[col], hue=target, hue_order=["Not Disaster Tweets", "Disaster Tweets"], alpha=0.35, kde=True)
-    st.pyplot(fig)
+    st.image("https://i.postimg.cc/tTQS0vbG/675dad3f64a5c38314f15a488d23727c85202448e662266c2510458f.png")
     
     col1, col2 = st.columns(2)
     col1.write("#### Statistical analysis of context features in non-disaster tweets.")
@@ -250,7 +183,7 @@ The processing pipeline consists of one or more pipeline components that are cal
 with tab3:
     st.warning("Attention: The model may not always make accurate predictions. I am currently working to improve it. This application is for educational purposes only.", icon="📢")
     #model = tf.keras.models.load_model("./models/model_base.h5")
-    model = tf.keras.models.load_model("/mount/src/mysolutions_mlzoomcamp2024_datatalks.club/NLP_with_Disaster_Tweets_Capstone_2/models/model_base.h5")
+    model = tf.keras.models.load_model(path+"/models/model_base.h5")
     st.write("## Load your data")
     st.write("### Complete the following information")
     
@@ -282,7 +215,7 @@ with tab3:
     
     st.write("### Or, you can upload your CSV file")
     st.write("#### Example")
-    df_test = pd.read_csv("/mount/src/mysolutions_mlzoomcamp2024_datatalks.club/NLP_with_Disaster_Tweets_Capstone_2/dataset/nlp-getting-started/test.csv", index_col="id")
+    df_test = pd.read_csv(path+"/dataset/nlp-getting-started/test.csv", index_col="id")
     df_test = df_test.drop(df_test[df_test["keyword"].isna()].index).head()
     st.dataframe(df_test[["keyword", "text"]])
     st.write("""Your file must contain the following fields: `id`, `keyword` and `text`.""")
@@ -306,4 +239,4 @@ with tab3:
             st.error('Please, load your file.', icon="🚨")
             
         
-#streamlit run ./app/my_app.py
+#streamlit run ./streamlit_app/my_app.py

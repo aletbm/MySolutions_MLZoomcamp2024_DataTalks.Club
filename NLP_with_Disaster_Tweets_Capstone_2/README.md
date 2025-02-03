@@ -17,7 +17,7 @@ But, it’s not always clear whether a person’s words are actually announcing 
 
 <img src="https://storage.googleapis.com/kaggle-media/competitions/tweet_screenshot.png" width=200>
 
-The author explicitly uses the word “ABLAZE” but means it metaphorically. This is clear to a human right away, especially with the visual aid. But it’s less clear to a machine.<br><br>
+The author explicitly uses the word “ABLAZE” but means it metaphorically. This is clear to a human right away, especially with the visual aid. But it’s less clear to a machine.
     
 In this competition, we’re challenged to build a machine learning model that **predicts which Tweets are about real disasters and which one’s aren’t**. We’ll have access to a dataset of **10,000 tweets** that were hand classified.
 

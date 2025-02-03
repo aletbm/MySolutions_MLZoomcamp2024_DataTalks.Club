@@ -15,9 +15,9 @@ Twitter has become an important communication channel in times of emergency. The
 
 But, it’s not always clear whether a person’s words are actually announcing a disaster. Take this example:
 
-<div style="display:flex; gap:20px">
-<div style="flex-basis:35%"><img src="https://storage.googleapis.com/kaggle-media/competitions/tweet_screenshot.png" width=300></div>
-<div>The author explicitly uses the word “ABLAZE” but means it metaphorically. This is clear to a human right away, especially with the visual aid. But it’s less clear to a machine.<br><br>
+<img src="https://storage.googleapis.com/kaggle-media/competitions/tweet_screenshot.png" width=200>
+
+The author explicitly uses the word “ABLAZE” but means it metaphorically. This is clear to a human right away, especially with the visual aid. But it’s less clear to a machine.<br><br>
     
 In this competition, we’re challenged to build a machine learning model that **predicts which Tweets are about real disasters and which one’s aren’t**. We’ll have access to a dataset of **10,000 tweets** that were hand classified.
 
@@ -35,9 +35,6 @@ You are predicting whether a given tweet is about a real disaster or not. If so,
     
 You can find the competition in the following link: [https://www.kaggle.com/competitions/nlp-getting-started](https://www.kaggle.com/competitions/nlp-getting-started)
 This particular challenge is perfect for data scientists looking to get started with Natural Language Processing.
-</div>
-</div>
-
 ---
 # Directory structure
 

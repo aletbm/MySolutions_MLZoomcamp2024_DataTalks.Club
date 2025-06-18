@@ -1,0 +1,9 @@
+[submodule "Blood_Cell_Cancer_Prediction"]
+	path = Blood_Cell_Cancer_Prediction
+	url = https://github.com/aletbm/Blood_Cell_Cancer_Prediction.git
+[submodule "Estimation_Obesity_Levels"]
+	path = Estimation_Obesity_Levels
+	url = https://github.com/aletbm/Estimation_Obesity_Levels.git
+[submodule "NLP_with_Disaster_Tweets"]
+	path = NLP_with_Disaster_Tweets
+	url = https://github.com/aletbm/NLP_with_Disaster_Tweets.git
